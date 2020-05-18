@@ -69,6 +69,9 @@
 					rotate3d: '0,1,0, 180deg',
 					duration: 500
 					});}, 500);
+				setTimeout(function(){
+					$('.portfolio_description').css("display", "none");
+				}, 501);
 				setTimeout(function () {
 						$('.photo_1').css(lenta_top);
 						$('.photo_2').css(lenta_bottom);}, 800);
@@ -140,7 +143,9 @@
 				rotate3d: '0,1,0, 180deg',
 				duration: 750
 				});
-
+			setTimeout(function(){
+					$('.portfolio_description').css("display", "none");
+				}, 751);
 			setTimeout(function () {$('.photo_1, .photo_2').css(lenta_zero);}, 2000);
 
 				setTimeout(function () {
@@ -246,7 +251,9 @@
 					rotate3d: '0,1,0, 180deg',
 					duration: 750
 					});
-
+			setTimeout(function(){
+					$('.portfolio_description').css("display", "none");
+				}, 751);
 			setTimeout(function () {$('.photo_1, .photo_2').css(lenta_zero);}, 2000);
 
 				setTimeout(function () {
