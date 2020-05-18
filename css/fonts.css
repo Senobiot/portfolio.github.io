@@ -1,0 +1,17 @@
+@font-face {
+  font-family: 'P22 Cezanne Regular';
+  font-style: normal;
+  font-weight: 400;
+  src: local("P22 Cezanne Regular"), local("P22CezanneRegular-Regular"), url("../fonts/P22 Cezanne Regular.woff") format("woff"), url("../fonts/P22 Cezanne Regular.ttf") format("truetype"); }
+
+@font-face {
+  font-family: 'Brothers';
+  font-style: normal;
+  font-weight: 400;
+  src: local("BrothersRegular"), local("BrothersRegular"), url("../fonts/BrothersRegular.woff") format("woff"), url("../fonts/BrothersRegular.woff2") format("woff2"), url("../fonts/BrothersRegular.eot?#iefix") format("embedded-opentype"), url("../fonts/BrothersRegular.ttf") format("truetype"); }
+
+@font-face {
+  font-family: 'Vibur';
+  src: local("Vibur"), local("Vibur-Regular"), url("../fonts/Vibur-Regular.ttf") format("truetype");
+  font-weight: 400;
+  font-style: normal; }
