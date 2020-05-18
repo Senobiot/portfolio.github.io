@@ -8,7 +8,7 @@
 		let preloader=$('.preloader-wrapper'),
 		logo=$('.logo');
 		logo.fadeOut();
-		preloader.delay(500).fadeOut('slow');
+		preloader.delay(500).fadeToggle('slow');
 
 	let blink={'animation-name': 'blink',
 				'animation-duration': '1.2s',
