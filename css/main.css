@@ -111,6 +111,12 @@ h1, h2, h3, h4, h5, h6 {
   left: -webkit-calc(50% - 100px);
   left: calc(50% - 100px); }
 
+.preloadall {
+  position: absolute;
+  left: -500%;
+  top: -500%;
+  font-family: 'Vibur'; }
+
 .main-page {
   overflow: hidden;
   width: 100%;

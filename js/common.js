@@ -7,6 +7,7 @@
 		$(window).on('load', function () {
 
 		preloader.delay(500).fadeOut('slow');
+		$(".preloadall").css("display", "none");
 
 	let blink={'animation-name': 'blink',
 				'animation-duration': '1.2s',
