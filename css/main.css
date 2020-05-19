@@ -98,6 +98,11 @@ h1, h2, h3, h4, h5, h6 {
   text-align: center;
   line-height: 35px; }
 
+.preloadall {
+  display: none; }
+  .preloadall .vibur {
+    display: none; }
+
 .loading {
   font-size: 60px;
   line-height: 1.5; }
@@ -174,7 +179,7 @@ h1, h2, h3, h4, h5, h6 {
       width: 100%;
       font-family: 'P22 Cezanne Regular';
       font-weight: 700;
-      font-size: 45px;
+      font-size: 60px;
       color: #fff;
       text-shadow: 2px 2px 0 #040404, 2px -2px 0 #040404, -2px 2px 0 #040404, -2px -2px 0 #040404, 2px 0px 0 #040404, 0px 2px 0 #040404, -2px 0px 0 #040404, 0px -2px 0 #040404;
       text-align: center;
@@ -572,34 +577,6 @@ h1, h2, h3, h4, h5, h6 {
     .about_text:first-child, .contact_text:first-child {
       font-size: 18px; }
   .contact {
-    top: 10%; }
+    top: 20%; }
   .portfolio_description.active {
     font-size: 20px; } }
-
-@media (max-height: 520px) {
-  .portfolio_description.active {
-    font-size: 30px;
-    top: 40%; }
-  .text-wrapper .text {
-    font-size: 40px; }
-  .text-wrapper .text:first-child {
-    top: 10%; }
-  .text-wrapper .text:nth-child(n+2) {
-    left: 35%;
-    top: 10%; }
-  .text-wrapper .text:nth-child(n+3) {
-    left: 65%;
-    top: 10%; }
-  .contact {
-    top: -15%;
-    z-index: -1; }
-  .about {
-    font-size: 16px;
-    top: 10%;
-    z-index: -1; }
-  .contact_text:last-child {
-    margin-top: 40px; }
-  .portfolio.active {
-    height: 90%; }
-  .portfolio.active .work:hover:after {
-    font-size: 40px; } }
