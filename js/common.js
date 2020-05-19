@@ -1,6 +1,8 @@
 		let preloader=$('.preloader-wrapper'),
 		logo=$('.logo');
-		logo.fadeOut();	
+		for (i = 0; i < 50; i++) {
+		$(logo).fadeToggle(500);
+		};
 
 		$(window).on('load', function () {
 
