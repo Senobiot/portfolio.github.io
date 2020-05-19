@@ -1,4 +1,4 @@
-		let preloader=$('.preloader-wrapper'),
+	let preloader=$('.preloader-wrapper'),
 		logo=$('.logo');
 		for (i = 0; i < 10; i++) {
 		$(logo).fadeToggle(500);
@@ -6,13 +6,7 @@
 
 		$(window).on('load', function () {
 
-// $(document).ready(function() {
-
-	// ========================================Preloader=========================================
-
-
-
-		preloader.delay(500).fadeToggle('slow');
+		preloader.delay(500).fadeOut('slow');
 
 	let blink={'animation-name': 'blink',
 				'animation-duration': '1.2s',
