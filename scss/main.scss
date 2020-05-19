@@ -528,3 +528,52 @@ left: calc(50% - 100px);
 		font-size: 20px;
 	}
 }
+
+@media (max-height: 520px) {
+	.portfolio_description.active {
+		font-size: 30px;
+		top: 40%;
+	}
+
+	.text-wrapper .text {
+		font-size: 40px;
+	}
+
+	.text-wrapper .text:first-child {
+		top: 10%;
+	}
+
+	.text-wrapper .text:nth-child(n+2) {
+		left: 35%;
+		top: 10%;
+	}
+
+	.text-wrapper .text:nth-child(n+3) {
+		left: 65%;
+		top: 10%;
+	}
+
+	.contact {
+		top: -15%;
+		z-index: -1;
+	}
+
+	.about {
+		font-size: 16px;
+		top: 10%;
+		z-index: -1;
+	}
+
+	.contact_text:last-child {
+		margin-top: 40px;
+	}
+
+	.portfolio.active {
+		height: 90%;
+	}
+
+	.portfolio.active .work:hover:after {
+		font-size: 40px;
+	}
+}
+
