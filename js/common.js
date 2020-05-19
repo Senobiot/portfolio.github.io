@@ -1,14 +1,16 @@
-	$(window).on('load', function () {
+		let preloader=$('.preloader-wrapper'),
+		logo=$('.logo');
+		logo.fadeOut();	
+
+		$(window).on('load', function () {
 
 // $(document).ready(function() {
 
 	// ========================================Preloader=========================================
 
 
-		let preloader=$('.preloader-wrapper'),
-		logo=$('.logo');
-		logo.fadeOut();
-		preloader.delay(500).fadeToggle('slow');
+
+		preloader.delay(100).fadeToggle('slow');
 
 	let blink={'animation-name': 'blink',
 				'animation-duration': '1.2s',
