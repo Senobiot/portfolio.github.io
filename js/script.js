@@ -149,7 +149,7 @@
 
 				setTimeout(function () {
 					$('.perspective').css({
-						'background-image': "url('img/camera2.jpg')",
+						'background-image': "url('img/camera6.jpg')",
 						'transition': '0.5s linear',
 						'-webkit-transition': '0.5s linear',
 						'-o-transition': '0.5s linear',

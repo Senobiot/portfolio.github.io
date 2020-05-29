@@ -169,31 +169,27 @@ h1, h2, h3, h4, h5, h6 {
     opacity: 0.5;
     -webkit-filter: grayscale(1);
             filter: grayscale(1);
-    -webkit-transition: 0.7s ease-in;
-    -o-transition: 0.7s ease-in;
-    transition: 0.7s ease-in; }
+    -webkit-transition: 1s ease-in;
+    -o-transition: 1s ease-in;
+    transition: 1s ease-in; }
     .portfolio.active .work:after {
       content: 'Go to see';
       position: absolute;
       left: 0;
       bottom: 15%;
       width: 100%;
-      font-family: 'P22 Cezanne Regular';
+      font-family: 'Brothers';
       font-weight: 700;
-      font-size: 60px;
+      font-size: 30px;
       color: #fff;
       text-shadow: 2px 2px 0 #040404, 2px -2px 0 #040404, -2px 2px 0 #040404, -2px -2px 0 #040404, 2px 0px 0 #040404, 0px 2px 0 #040404, -2px 0px 0 #040404, 0px -2px 0 #040404;
       text-align: center;
       -webkit-transition: 1s;
       -o-transition: 1s;
       transition: 1s;
-      -webkit-transform: scaleX(0);
-          -ms-transform: scaleX(0);
-              transform: scaleX(0); }
+      opacity: 0; }
     .portfolio.active .work:hover:after {
-      -webkit-transform: scaleX(1);
-          -ms-transform: scaleX(1);
-              transform: scaleX(1); }
+      opacity: 1; }
     .portfolio.active .work:hover {
       -webkit-filter: grayscale(0);
               filter: grayscale(0);
@@ -347,7 +343,8 @@ h1, h2, h3, h4, h5, h6 {
   color: #fff;
   text-shadow: 2px 2px 0 #040404, 2px -2px 0 #040404, -2px 2px 0 #040404, -2px -2px 0 #040404, 2px 0px 0 #040404, 0px 2px 0 #040404, -2px 0px 0 #040404, 0px -2px 0 #040404;
   font-family: 'P22 Cezanne Regular';
-  cursor: pointer; }
+  cursor: pointer;
+  z-index: 50; }
   .text-wrapper .text:hover {
     -webkit-animation: blink 1.2s linear infinite;
             animation: blink 1.2s linear infinite; }
@@ -499,7 +496,8 @@ h1, h2, h3, h4, h5, h6 {
   .text-wrapper .text {
     font-size: 80px; }
   .portfolio.active {
-    width: 80%; }
+    padding: 0 10px;
+    width: 100%; }
     .portfolio.active .work:nth-child(n+1) {
       -webkit-filter: none;
               filter: none; } }
@@ -533,17 +531,17 @@ h1, h2, h3, h4, h5, h6 {
 
 @media (max-width: 700px) {
   .photo_1, .photo_2 {
-    height: 7%; }
+    height: 12%; }
   .text-wrapper .text {
     font-size: 70px; }
     .text-wrapper .text:nth-child(n+1) {
-      top: 10%;
+      top: 5%;
       left: 5%; }
     .text-wrapper .text:nth-child(2) {
-      top: 20%;
+      top: 17%;
       left: 5%; }
     .text-wrapper .text:last-child {
-      top: 30%; }
+      top: 29%; }
   .portfolio_description.active {
     top: 55%;
     left: 8%; }
@@ -551,17 +549,21 @@ h1, h2, h3, h4, h5, h6 {
     top: 50%;
     right: 0; }
   .contact {
-    top: 40%; } }
+    top: 30%; } }
 
 @media (max-width: 510px) {
   .portfolio.active {
-    margin-top: 80px;
-    height: 90vh; }
+    margin-top: 50px;
+    padding: 0 10px;
+    height: -webkit-calc(100% - 60px);
+    height: calc(100% - 60px);
+    width: 100%; }
     .portfolio.active .work:nth-child(n+1) {
-      width: 75%;
-      height: 19%; }
+      width: 48%;
+      height: 30%; }
     .portfolio.active .go_home {
-      left: 35%;
+      font-size: 30px;
+      left: 36%;
       top: 1%; }
   .portfolio_description.active {
     font-size: 32px;
@@ -583,35 +585,79 @@ h1, h2, h3, h4, h5, h6 {
     z-index: 0; }
     .about_text:first-child, .contact_text:first-child {
       font-size: 18px; }
+    .about_text:last-child, .contact_text:last-child {
+      margin-top: 50px; }
   .contact {
-    top: 20%; }
+    top: 10%; }
   .portfolio_description.active {
     font-size: 20px; } }
 
-@media (max-height: 520px) {
-  .portfolio_description.active {
-    font-size: 30px;
-    top: 40%; }
+@media (max-height: 775px) and (orientation: landscape) {
+  .portfolio.active {
+    margin-top: 100px;
+    padding: 0 20px;
+    height: -webkit-calc(100% - 110px);
+    height: calc(100% - 110px); }
+    .portfolio.active .work:nth-child(n+1) {
+      width: 34%; }
+  .contact {
+    bottom: 0;
+    top: auto;
+    right: 0; }
+  .about {
+    right: 0;
+    top: auto;
+    bottom: -20%; } }
+
+@media (max-height: 600px) and (orientation: landscape) {
   .text-wrapper .text {
     font-size: 40px; }
-  .text-wrapper .text:first-child {
-    top: 10%; }
-  .text-wrapper .text:nth-child(n+2) {
-    left: 35%;
-    top: 10%; }
-  .text-wrapper .text:nth-child(n+3) {
-    left: 65%;
-    top: 10%; }
-  .contact {
-    top: -15%;
-    z-index: -1; }
+    .text-wrapper .text:first-child {
+      top: 10%;
+      left: 5%; }
+    .text-wrapper .text:nth-child(2) {
+      left: 5%;
+      top: 35%; }
+    .text-wrapper .text:last-child {
+      left: 5%;
+      top: 60%; }
+  .contact, .about {
+    font-size: 14px;
+    padding: 65px 50px 0 70px;
+    width: 300px;
+    height: 360px;
+    bottom: 10%; }
+    .contact .contact_text, .about .contact_text {
+      font-size: 14px; }
+      .contact .contact_text:first-child, .about .contact_text:first-child {
+        padding-top: 20px; }
+      .contact .contact_text:last-child, .about .contact_text:last-child {
+        margin-top: 60px; }
   .about {
-    font-size: 16px;
-    top: 10%;
-    z-index: -1; }
-  .contact_text:last-child {
-    margin-top: 40px; }
+    bottom: -10%; }
+  .portfolio_description.active {
+    z-index: 10; } }
+
+@media (max-height: 420px) and (orientation: landscape) {
   .portfolio.active {
-    height: 90%; }
-  .portfolio.active .work:hover:after {
-    font-size: 40px; } }
+    margin-top: 50px;
+    margin-bottom: 0;
+    height: -webkit-calc(100% - 60px);
+    height: calc(100% - 60px); }
+    .portfolio.active .go_home {
+      font-size: 40px;
+      left: 10%; }
+    .portfolio.active .work:nth-child(n+1) {
+      width: 32%;
+      height: 48%; }
+  .portfolio_description.active {
+    top: 30%;
+    left: auto;
+    font-size: 20px;
+    width: 300px;
+    height: 150px; }
+    .portfolio_description.active .arrow {
+      width: 40px;
+      height: 20px;
+      padding: 0;
+      font-size: 0px; } }

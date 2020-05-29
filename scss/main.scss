@@ -87,24 +87,26 @@ left: calc(50% - 100px);
 		background-color: #fff;
 		opacity: 0.5;
 		filter: grayscale(1);
-		transition: 0.7s ease-in;
+		transition: 1s ease-in;
 		&:after {
 			content: 'Go to see';
 			position: absolute;
 			left: 0;
 			bottom: 15%;
 			width: 100%;
-			font-family: 'P22 Cezanne Regular';
+			font-family: 'Brothers';
 			font-weight: 700;
-			font-size: 60px;
+			font-size: 30px;
 			color: #fff;
 			text-shadow: 2px 2px 0 #040404, 2px -2px 0 #040404, -2px 2px 0 #040404, -2px -2px 0 #040404, 2px 0px 0 #040404, 0px 2px 0 #040404, -2px 0px 0 #040404, 0px -2px 0 #040404;
 			text-align: center;
 			transition: 1s;
-			transform: scaleX(0);
+			// transform: scaleX(0);
+			opacity: 0;
 		}
 		&:hover:after {
-				transform: scaleX(1);
+				// transform: scaleX(1);
+				opacity: 1;
 			}
 		&:hover {
 			filter: grayscale(0);
@@ -260,6 +262,7 @@ left: calc(50% - 100px);
 		// font-family: "Vibur", cursive;
 		font-family: 'P22 Cezanne Regular';
 		cursor: pointer;
+		z-index: 50;
 			&:hover {
 			animation: blink 1.2s linear infinite;
 		}
@@ -412,7 +415,8 @@ left: calc(50% - 100px);
 		}
 	}
 	.portfolio.active {
-		width: 80%;
+		padding: 0 10px;
+		width: 100%;
 		& .work:nth-child(n+1) {
 			filter: none;
 		}
@@ -460,20 +464,20 @@ left: calc(50% - 100px);
 
 @media (max-width: 700px) {
 	.photo_1, .photo_2 {
-		height: 7%;
+		height: 12%;
 	}
 	.text-wrapper .text {
 		font-size: 70px;
 		&:nth-child(n+1) {
-			top: 10%;
+			top: 5%;
 			left: 5%;
 		}
 		&:nth-child(2) {
-			top: 20%;
+			top: 17%;
 			left: 5%;
 		}
 		&:last-child {
-			top: 30%;
+			top: 29%;
 		}
 
 	}
@@ -486,20 +490,23 @@ left: calc(50% - 100px);
 		right: 0;
 	}
 	.contact {
-		top: 40%;
+		top: 30%;
 	}
 }
 
 @media (max-width: 510px) {
 	.portfolio.active {
-		margin-top: 80px;
-		height: 90vh;
+		margin-top: 50px;
+		padding: 0 10px;
+		height: calc(100% - 60px);
+		width: 100%;
 		.work:nth-child(n+1) {
-			width: 75%;
-			height: 19%;
+			width: 48%;
+			height: 30%;
 		}
 		& .go_home {
-			left: 35%;
+			font-size: 30px;
+			left: 36%;
 			top: 1%;
 		}
 	}
@@ -529,61 +536,105 @@ left: calc(50% - 100px);
 				&:first-child {
 					font-size: 18px;
 				}
+				&:last-child {
+					margin-top: 50px;
+				}
 		}
 	}
 	.contact {
-		top: 20%;
+		top: 10%;
 	}
 	.portfolio_description.active {
 		font-size: 20px;
 	}
 }
 
-@media (max-height: 520px) {
-	.portfolio_description.active {
-		font-size: 30px;
-		top: 40%;
-	}
-
-	.text-wrapper .text {
-		font-size: 40px;
-	}
-
-	.text-wrapper .text:first-child {
-		top: 10%;
-	}
-
-	.text-wrapper .text:nth-child(n+2) {
-		left: 35%;
-		top: 10%;
-	}
-
-	.text-wrapper .text:nth-child(n+3) {
-		left: 65%;
-		top: 10%;
-	}
-
-	.contact {
-		top: -15%;
-		z-index: -1;
-	}
-
-	.about {
-		font-size: 16px;
-		top: 10%;
-		z-index: -1;
-	}
-
-	.contact_text:last-child {
-		margin-top: 40px;
-	}
-
+@media (max-height: 775px) and (orientation: landscape) {
 	.portfolio.active {
-		height: 90%;
+		margin-top: 100px;
+		padding: 0 20px;
+		height: calc(100% - 110px);
+		& .work:nth-child(n+1) {
+			width: 34%;
+		}
 	}
-
-	.portfolio.active .work:hover:after {
-		font-size: 40px;
+	.contact {
+		bottom: 0;
+		top: auto;
+		right: 0;
+	}
+	.about {
+		right: 0;
+		top: auto;
+		bottom: -20%;
 	}
 }
 
+@media (max-height: 600px) and (orientation: landscape) {
+	.text-wrapper .text {
+		font-size: 40px;
+		&:first-child {
+			top: 10%;
+			left: 5%;
+		}
+		&:nth-child(2) {
+			left: 5%;
+			top: 35%;
+		}
+		&:last-child {
+			left: 5%;
+			top: 60%;
+		}
+	}
+	.contact, .about {
+		font-size: 14px;
+		padding: 65px 50px 0 70px;
+		width: 300px;
+		height: 360px;
+		bottom: 10%;
+		& .contact_text {
+			font-size: 14px;
+			&:first-child {
+				padding-top: 20px;
+			}
+			&:last-child {
+				margin-top: 60px;
+			}
+		}
+	}
+	.about {
+		bottom: -10%;
+	}
+	.portfolio_description.active {
+		z-index: 10;
+	}
+}
+
+@media (max-height: 420px) and (orientation: landscape) {
+	.portfolio.active {
+		margin-top: 50px;
+		margin-bottom: 0;
+		height: calc(100% - 60px);
+		.go_home {
+			font-size: 40px;
+			left: 10%;
+		}
+		& .work:nth-child(n+1) {
+			width: 32%;
+			height: 48%;
+		}
+	}
+	.portfolio_description.active {
+			top: 30%;
+			left: auto;
+			font-size: 20px;
+			width: 300px;
+			height: 150px;
+			& .arrow {
+				width: 40px;
+				height: 20px;
+				padding: 0;
+				font-size: 0px;
+			}
+		}
+}
