@@ -488,19 +488,19 @@ h1, h2, h3, h4, h5, h6 {
     top: 200px; }
   .portfolio_description.active {
     font-size: 40px;
-    width: 500px; } }
+    width: 500px; }
+  .portfolio.active {
+    padding: 0 10px;
+    width: 100%; } }
 
 @media (max-width: 1280px) {
   .about, .contact {
     right: 0; }
   .text-wrapper .text {
     font-size: 80px; }
-  .portfolio.active {
-    padding: 0 10px;
-    width: 100%; }
-    .portfolio.active .work:nth-child(n+1) {
-      -webkit-filter: none;
-              filter: none; } }
+  .portfolio.active .work:nth-child(n+1) {
+    -webkit-filter: none;
+            filter: none; } }
 
 @media (max-width: 1000px) {
   .photo_1, .photo_2 {
@@ -587,8 +587,9 @@ h1, h2, h3, h4, h5, h6 {
       font-size: 18px; }
     .about_text:last-child, .contact_text:last-child {
       margin-top: 50px; }
-  .contact {
-    top: 10%; }
+  .contact, .about {
+    top: 10%;
+    right: -30%; }
   .portfolio_description.active {
     font-size: 20px; } }
 
@@ -599,7 +600,8 @@ h1, h2, h3, h4, h5, h6 {
     height: -webkit-calc(100% - 110px);
     height: calc(100% - 110px); }
     .portfolio.active .work:nth-child(n+1) {
-      width: 34%; }
+      width: 34%;
+      height: 30%; }
   .contact {
     bottom: 0;
     top: auto;
