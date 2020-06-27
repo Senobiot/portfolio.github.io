@@ -194,8 +194,10 @@ h1, h2, h3, h4, h5, h6 {
       -webkit-filter: grayscale(0);
               filter: grayscale(0);
       opacity: 1;
-      -webkit-box-shadow: inset 5px 5px 10px #000, inset -5px -5px 10px #000;
-              box-shadow: inset 5px 5px 10px #000, inset -5px -5px 10px #000; }
+      -webkit-box-shadow: inset 5px 5px 10px #000,
+ inset -5px -5px 10px #000;
+              box-shadow: inset 5px 5px 10px #000,
+ inset -5px -5px 10px #000; }
     .portfolio.active .work:first-child {
       background: url("../img/portfolio-work_tile-1.jpg") 50%/cover no-repeat; }
       .portfolio.active .work:first-child:hover {
@@ -221,7 +223,7 @@ h1, h2, h3, h4, h5, h6 {
             -ms-transform: translate(-5px, 5px);
                 transform: translate(-5px, 5px); }
     .portfolio.active .work:nth-child(5) {
-      background: url("../img/portfolio-work_tile-5.jpg") 50%/cover no-repeat; }
+      background: url("../img/portfolio-work_tile-7.jpg") 50%/cover no-repeat; }
       .portfolio.active .work:nth-child(5):hover {
         -webkit-transform: translate(5px, 5px);
             -ms-transform: translate(5px, 5px);
